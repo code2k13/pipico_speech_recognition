@@ -1,5 +1,6 @@
 # Speech Recognition Using CircuitPython
 ![assembled circuit](images/assembled_circuit.png)
+
 This repository contains code and instructions to implement single word speech recognition using neural networks on any board running CircuitPython.
 The code and instructions were tested with Raspberry Pi Pico board, but should work with almost any board that supports CircuitPython.
 This work is mainly inspired from [a tutorial on tensorflow's website](https://www.tensorflow.org/tutorials/audio/simple_audio). 
