@@ -28,6 +28,12 @@ Assuming we are using a Raspiberry Pi Pico:
 ![Schematics](images/pipico_voice_recognition_schem.png)
 
 ![Connections](images/pipico_voice_recognition_bb.png)
+
+## Checking if audio is getting recorded
+Before proceeding to next step, it is worthwhile to check if our PiPico is actually recording speech.
+
+Once you have made all the connections, load the code present in the [`record_speech.py`](record_speech.py) file on the PiPico, and while the PiPico is connected to a computer, record the audio using [`record_speech.ipynb`](notebooks/record_speech.ipynb) notebook (running on the computer). Feel free to tweak the gain on your microphone board till you get a clearer recording.
+
 ## Detecting speech.
 
 Copy the following files to the Pi Pico board:
@@ -50,7 +56,7 @@ After copying the files, your board will reboot. Wait for the yellow LED to flas
 
 ## How it works
 
-Please read this article for more details on the technique that was used to train the model more information on debugging.
+Please read this article [WIP] for more details on the technique that was used to train the model more information on debugging.
 
 ## Adjusting detection threshold
 
