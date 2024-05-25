@@ -54,10 +54,6 @@ from yes_model_min import predict
 After copying the files, your board will reboot. Wait for the yellow LED to flash (this takes about 30 seconds). This means the system is ready. Now, press the pushbutton and speak the word you want the Pi Pico to recognize (like "on"). The yellow LED will light up for a second – make sure you speak while it's on. If the word is detected, the green LED will blink a couple of times. If not, give it another try!
 
 
-## How it works
-
-Please read this article [WIP] for more details on the technique that was used to train the model more information on debugging.
-
 ## Adjusting detection threshold
 
 Try to play around with detection threshold in `code.py` to increase accuracy of detection. Modify this line:
@@ -73,7 +69,12 @@ if prediction[0] > 0.70:
 Want to teach your Pi Pico new words? Check out this [Kaggle notebook](https://www.kaggle.com/code/finalepoch/speech-recognition-using-circuitpython) for instructions on training a model using the '[Speech Commands Dataset](http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz)'.
 
 
-I'd be glad to create a response that incorporates the best aspects of Response A and Response B, addresses their shortcomings based on the ratings, and adheres to the task instructions:
+
+## Uncovering the Inner Workings
+
+For more insights into the feature extraction technique employed in the project and the methodology used for model training, please refer to the article below:
+
+https://ashishware.com/2024/05/20/pipicospeech/
 
 ## Known Issues
 
